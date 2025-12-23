@@ -9,6 +9,11 @@ from app.routers.bmkg import router as bmkg_router
 from app.routers.downloaders import router as dl_router
 from app.routers.images import router as img_router
 from app.routers.utils import router as utils_router
+from app.routers.copilot import router as copilot_router
+from app.routers.gemini_web import router as gemini_web_router
+from app.routers.islamic import router as islamic_router
+from app.routers.converters import router as converters_router
+from app.routers.ocr import router as ocr_router
 
 
 @asynccontextmanager
@@ -41,3 +46,8 @@ app.include_router(bmkg_router)
 app.include_router(dl_router)
 app.include_router(img_router)
 app.include_router(utils_router)
+app.include_router(copilot_router)
+app.include_router(gemini_web_router)
+app.include_router(islamic_router)
+app.include_router(converters_router)
+app.include_router(ocr_router)

@@ -30,6 +30,42 @@ General helper tools.
     - `GET /api/utils/base64/decode`: Base64 decode text.
     - `GET /api/utils/qr`: Generate QR codes.
 
+### 5. Github Copilot Wrapper
+Interaction with Github Copilot chat.
+- **Endpoints**:
+    - `GET /api/copilot/auth/start`: Start device authentication flow.
+    - `POST /api/copilot/auth/check`: Complete authentication with device code.
+    - `POST /api/copilot/chat`: Chat with Copilot (streaming).
+
+### 6. Gemini WebAPI
+Interaction with Gemini using browser cookies.
+- **Endpoints**:
+    - `POST /api/gemini-web/auth`: Set auth cookies.
+    - `POST /api/gemini-web/chat`: Chat with Gemini.
+
+### 7. Islamic Tools
+Utilities for Muslim daily use.
+- **Endpoints**:
+    - `GET /api/islamic/quran`: List of Surahs.
+    - `GET /api/islamic/quran/{id}`: Surah details.
+    - `GET /api/islamic/hadith`: List Hadith books.
+    - `GET /api/islamic/hadith/{book}`: Get Hadiths.
+    - `GET /api/islamic/imsak`: Prayer times (lat/long).
+    - `GET /api/islamic/tahlil`: Tahlil reading.
+
+### 8. Converters
+File conversion utilities.
+- **Endpoints**:
+    - `POST /api/convert/pdf-to-word`: Convert PDF to DOCX.
+    - `POST /api/convert/audio-extract`: Extract MP3 from Video.
+    - `POST /api/convert/audio-extract`: Extract MP3 from Video.
+    - `POST /api/convert/video-to-gif`: Convert Video to GIF.
+
+### 9. OCR KTP
+Extract data from Indonesian ID Card (KTP) using Base44 API.
+- **Endpoints**:
+    - `POST /api/ocr/ktp`: Extract data from URL or File.
+
 ## Installation
 
 1. **Clone the repository**
